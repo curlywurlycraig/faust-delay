@@ -5,4 +5,4 @@ amp = hslider("amplitude", 0.5, 0, 1, 0.1);
 delay(x) = +(x) ~ (amp * x@(44100 * time));
 
 // main entry point
-process = sin(_);
+process = delay(_);
